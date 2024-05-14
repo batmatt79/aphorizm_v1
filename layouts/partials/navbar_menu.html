@@ -1,18 +1,23 @@
 <header>
   <nav>
       <ul class='nav-bar'>
-          <li class='logo'><a href='/'><img src='./images/logo.png'/></a></li>
+          <li class='logo'><a href='/'><img src='/images/logo.png'/></a></li>
           <input type='checkbox' id='check' />
           <span class="menu">
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Support</a></li>
+              {{ if .IsTranslated }}
+              {{ range .Translations }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Language.Lang }}</a>
+              </li>
+              {{ end }}
+              {{ end }}
               <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
               
             </span>
         <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
       </ul>
   </nav>
-  </header>
+</header>

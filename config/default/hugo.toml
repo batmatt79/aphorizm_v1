@@ -1,0 +1,38 @@
+paginate = 4
+baseURL = 'https://www.aphorizm.com/'
+DefaultContentLanguage = "zh-tw"
+
+[languages]
+  [languages.zh-tw]
+    title = "Aphorizm ZH"
+    disabled = false
+    languageDirection = 'ltr'
+    languageCode = 'zh-TW'
+    contentDir = "content/zh-tw"
+    languageName = '中文'
+    weight = 1
+  [languages.en]
+    title = "Aphorizm"
+    disabled = false
+    languageDirection = 'ltr'
+    languageCode = 'en-US'
+    contentDir = "content/en"
+    languageName = 'English'
+    weight = 2
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  description = "Freedom & Culture"
+  dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+  category = "categories"
+  author = "authors"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-6B50W0P5K0' 

@@ -1,0 +1,16 @@
+baseURL = 'https://www.aphorizm.com'
+languageCode = 'en-us'
+title = 'Aphorizm'
+paginate = 4
+
+[params]
+  description = "Freedom & Culture"
+  dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+  category = "categories"
+  author = "authors"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-6B50W0P5K0' 
